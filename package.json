@@ -1,0 +1,90 @@
+{
+  "name": "boilerplate-crajs",
+  "private": false,
+  "license": "MIT",
+  "author": {
+    "name": "Henrique Albuquerque",
+    "email": "ehf.albuquerque@gmail.com",
+    "url": "https://github.com/rickyalbuq"
+  },
+  "description": "A simple project starter to work with TypeScript, React, Jest and Styled Components.",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "lint": "eslint src --max-warnings=0",
+    "lint:fix": "yarn lint --fix",
+    "test": "jest",
+    "test:watch": "yarn test --watch",
+    "prepare": "husky install",
+    "generate": "yarn plop --plopfile generators/plopfile.js",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "lint-staged": {
+    "src/**/*": [
+      "yarn lint --fix",
+      "yarn test --findRelatedTests --bail"
+    ]
+  },
+  "dependencies": {
+    "polished": "^4.1.3",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-router": "^6.0.2",
+    "react-router-dom": "^6.0.2",
+    "react-scripts": "^5.0.0",
+    "simplebar-react": "^2.3.6",
+    "styled-components": "^5.3.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "@babel/preset-react": "^7.16.5",
+    "@babel/preset-typescript": "^7.16.5",
+    "@storybook/addon-actions": "^6.4.9",
+    "@storybook/addon-essentials": "^6.4.9",
+    "@storybook/addon-links": "^6.4.9",
+    "@storybook/react": "^6.4.9",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "@types/jest": "^27.0.3",
+    "@types/node": "^16.7.13",
+    "@types/react": "^17.0.20",
+    "@types/react-dom": "^17.0.9",
+    "@types/styled-components": "^5.1.16",
+    "@typescript-eslint/eslint-plugin": "^5.5.0",
+    "@typescript-eslint/parser": "^5.5.0",
+    "babel-jest": "^27.4.5",
+    "babel-plugin-styled-components": "^2.0.2",
+    "eslint": "^8.3.0",
+    "eslint-config-next": "12.0.4",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-storybook": "^0.5.2",
+    "husky": "6.0.0",
+    "jest": "^27.4.2",
+    "jest-styled-components": "^7.0.8",
+    "lint-staged": "^12.1.2",
+    "plop": "^3.0.1",
+    "prettier": "2.5.0",
+    "storybook-addon-styled-components-themes": "^0.0.2",
+    "typescript": "^4.4.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
